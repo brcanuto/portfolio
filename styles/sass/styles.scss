@@ -1,0 +1,27 @@
+@import 'setup';
+@import 'variables';
+
+
+// Font and Typography things
+html{
+    font-size: 125%;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primaryColor;
+    h1{
+        font: 600 2rem 'Montserrat', sans-serif;
+        color: #fff;
+    }
+    p{
+        color: #fff;
+        font-weight: 300;
+    }
+    .downArrow{
+        align-self: flex-end;
+    }
+}
