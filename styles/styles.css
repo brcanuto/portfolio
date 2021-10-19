@@ -235,6 +235,10 @@ html {
   overflow: hidden;
 }
 
+.wrapper {
+  max-width: 80%;
+}
+
 html {
   font-size: 125%;
 }
@@ -261,6 +265,7 @@ header p {
   font-weight: 300;
 }
 header .downArrow {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  position: absolute;
+  top: 90%;
+  width: auto;
 }

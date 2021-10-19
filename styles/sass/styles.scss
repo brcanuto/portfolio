@@ -2,6 +2,11 @@
 @import 'variables';
 
 
+// General
+.wrapper{
+    max-width: 80%;
+}
+
 // Font and Typography things
 html{
     font-size: 125%;
@@ -22,6 +27,8 @@ header {
         font-weight: 300;
     }
     .downArrow{
-        align-self: flex-end;
+        position: absolute;
+        top: 90%;
+        width: auto;
     }
 }
