@@ -235,10 +235,6 @@ html {
   overflow: hidden;
 }
 
-.wrapper {
-  max-width: 80%;
-}
-
 html {
   font-size: 125%;
 }
@@ -268,4 +264,32 @@ header .downArrow {
   position: absolute;
   top: 90%;
   width: auto;
+}
+header .wrapper {
+  max-width: 80%;
+}
+
+.about {
+  margin: 0 auto;
+  max-width: 80rem;
+}
+.about .aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about .aboutText {
+  width: calc(50% - 0.5rem);
+  display: inline-block;
+}
+.about .imgContainer {
+  max-width: calc(50% - 0.5rem);
+  width: calc(50% - 0.5rem);
+  display: inline-block;
+}
+.about .imgContainer img {
+  height: 50vh;
+  width: auto;
+  -webkit-box-shadow: 0.25rem 0.5rem;
+          box-shadow: 0.25rem 0.5rem;
 }
