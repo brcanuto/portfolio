@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+
 
     <title>Brian Canuto | Web Developer</title>
 </head>
@@ -37,16 +39,16 @@
         <p></p> -->
 
         <div class="wrapper">
-            <h1>Hello world! I'm Brian Canuto</h1>
+            <h1>Hello world! <span>I'm Brian Canuto</span></h1>
             <p>A Web Developer</p>
         </div>
         <div class="downArrow">
-            <i class="fas fa-arrow-circle-down"></i>
+            <i class="fas fa-chevron-circle-down"></i>
         </div>
     </header>
 
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <h2>About</h2>
             <div class="aboutContainer">
                 <div class="aboutText">
@@ -58,91 +60,127 @@
             </div>
         </section>
     
-        <section class="skillsAndTools">
+        <section class="skillsAndTools" id="skills">
             <div class="wrapper">
                 <h2>Skills and Tools</h2>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </section>
-
-        <section class="projects">
-            <div>
-                <div>
-                    <div><img src="" alt=""></div>
-                    <div>
-                        <h3></h3>
-                        <p></p>
-                        <button></button><button></button></div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div><img src="" alt=""></div>
-                    <div>
-                        <h3></h3>
-                        <p></p>
-                        <button></button><button></button></div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div><img src="" alt=""></div>
-                    <div>
-                        <h3></h3>
-                        <p></p>
-                        <button></button><button></button></div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div><img src="" alt=""></div>
-                    <div>
-                        <h3></h3>
-                        <p></p>
-                        <button></button><button></button></div>
+                <!-- To Do: Make animations as well as text pop up underneath to show the name of the skill. Put into a 2x5 grid and size appropriately. -->
+                <div class="skillsGrid">
+                    <div class="skill">
+                        <i class="devicon-html5-plain colored"></i>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-css3-plain colored"></i>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-sass-original colored"></i>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-javascript-plain colored"></i>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-firebase-plain colored"></i>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-react-original colored"></i>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-github-original"></i>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-nodejs-plain colored"></i>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-universal-access"></i>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="contactMe">
+        <section class="projects wrapper" id="projects">
+            <h2>Projects</h2>
             <div>
-                <h2></h2>
-                <p></p>
+                <div class="project1Container">
+                    <div class="project1ImgContainer">
+                        <img src="./styles/assets/fireAndForgot.png" alt="picture of Fire And Forget website">
+                    </div>
+                    <div class="project1TextContainer">
+                        <h3>Fire & Forget</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, qui. Eos modi beatae sequi voluptatibus, quae odio officia rem, temporibus quisquam mollitia, tempora quia ipsa obcaecati rerum culpa quod neque!</p>
+                        <button>Github</button>
+                        <button>Live Site</button>
+                    </div>
+                </div>
             </div>
             <div>
-                <form action="">
-                    <label for=""></label>
-                    <input type="text">
-                    
-                    <label for=""></label>
-                    <input type="text">
-                    
-                    <label for=""></label>
-                    <textfield></textfield>
-
-                    <a href="">
-                        <p></p>
-                    </a>
-                </form>
+                <div class="project2Container">
+                    <div class="project2ImgContainer">
+                        <img src="./styles/assets/buffysLog.png" alt="picture of Buffy's workout log website">
+                    </div>
+                    <div class="project2TextContainer">
+                        <h3>Buffy's Workout Log</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, qui. Eos modi beatae sequi voluptatibus, quae odio officia rem, temporibus quisquam mollitia, tempora quia ipsa obcaecati rerum culpa quod neque!</p>
+                        <button>Github</button>
+                        <button>Live Site</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="project3Container">
+                    <div class="project3ImgContainer">
+                        <img src="./styles/assets/nygmaMachine.png" alt="picture of The Nygma Machine website">
+                    </div>
+                    <div class="project3TextContainer">
+                        <h3>The Nygma Machine</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, qui. Eos modi beatae sequi voluptatibus, quae odio officia rem, temporibus quisquam mollitia, tempora quia ipsa obcaecati rerum culpa quod neque!</p>
+                        <button>Github</button>
+                        <button>Live Site</button>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <footer>
-            <p></p>
+        <section class="contactMe" id="contact">
+            <div class="wrapper">
+                <h2>Contact</h2>
+                <div class="contactContainer">
+                    <div class="contactTextContainer">
+                        <p>Thanks for making it to this point! Feel free to reach out to me directly at the email below!<span>brian.r.canuto@gmail.com</span></p>
+                        <div>
+                            <a href="https://github.com/brcanuto">
+                                <i class="devicon-github-original"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/brian-canuto/">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com/BCcodes">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="formContainer">
+                        <form action="" class="formFlex">
+                            <label for="" class="sr-only">Name</label>
+                            <input type="text" placeholder="Name">
+                            
+                            <label for="" class="sr-only">Email</label>
+                            <input type="email" placeholder="E-mail">
+                            
+                            <label for="" class="sr-only">Message</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message">
+    
+                            </textarea>
+                            <input type="submit" name="" id="">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="wrapper">
+            <p>Copyright 2021 Brian Canuto</p>
         </footer>
     </main>
-
-
 </body>
 </html>

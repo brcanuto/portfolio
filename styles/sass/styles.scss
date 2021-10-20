@@ -3,11 +3,22 @@
 
 
 // General
-
+.wrapper{
+    max-width: 80%;
+    width: 70%;
+    margin: 0 auto;
+}
 
 // Font and Typography things
 html{
     font-size: 125%;
+}
+
+h2{
+    font: 600 2rem 'Montserrat', sans-serif;
+}
+h3{
+    font: 400 2rem 'Montserrat', sans-serif;
 }
 
 header {
@@ -17,8 +28,11 @@ header {
     align-items: center;
     background-color: $primaryColor;
     h1{
-        font: 600 2rem 'Montserrat', sans-serif;
+        font: 600 3rem 'Montserrat', sans-serif;
         color: #fff;
+        span{
+            display: block;
+        }
     }
     p{
         color: #fff;
@@ -28,9 +42,6 @@ header {
         position: absolute;
         top: 90%;
         width: auto;
-    }
-    .wrapper{
-        max-width: 80%;
     }
 }
 
@@ -48,11 +59,93 @@ header {
     .imgContainer{
         max-width: calc(50% - 0.5rem);
         width: calc(50% - 0.5rem);
-        display: inline-block;
+        display: flex;
+        justify-content: center;
         img{
-            height: 50vh;
+            height: 30vh;
             width: auto;
             box-shadow: 0.25rem 0.5rem;
         }
+    }
+}
+
+.skillsAndTools{
+    background-color: $primaryColor;
+    h2{
+        padding-top: 1rem;
+        color: #fff;
+    }
+    .skillsGrid{
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+    }
+    .skill{
+        // width: auto;
+        // height: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    i {
+        font-size: 5rem;
+        margin: 1rem 1rem;
+    }
+}
+
+.project1Container,
+.project2Container,
+.project3Container{
+    display: flex;
+    gap: 3rem;
+}
+
+.project1ImgContainer,
+.project2ImgContainer,
+.project3ImgContainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.project1TextContainer,
+.project2TextContainer,
+.project3TextContainer{
+    width: 50%;
+    display: block;
+}
+.project2ImgContainer{
+    order: 1;
+}
+.project1TextContainer,
+.project3TextContainer{
+    text-align: right;
+}
+
+.contactMe{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid rebeccapurple;
+    span{
+        display: block;
+        font-weight: bold;
+    }
+}
+.contactContainer{
+    display: flex;
+    gap: 3rem;
+}
+
+.contactTextContainer,
+.formContainer{
+    width: 50%;
+}
+
+footer{
+    text-align: center;
+    p{
+        margin: 0 auto;
     }
 }
