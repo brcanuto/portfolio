@@ -241,6 +241,13 @@ html {
   margin: 0 auto;
 }
 
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
 html {
   font-size: 125%;
 }
@@ -383,6 +390,31 @@ header .downArrow {
 .project1TextContainer,
 .project3TextContainer {
   text-align: right;
+}
+.project1TextContainer .buttonsContainer,
+.project3TextContainer .buttonsContainer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.buttonsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.gitHubButton,
+.liveSiteButton {
+  background-color: #2cb8a5;
+  padding: 0 0.5rem;
+  color: #fff;
+  height: 1.8rem;
+}
+.gitHubButton p,
+.liveSiteButton p {
+  margin: 0.3rem auto;
 }
 
 .contactMe {

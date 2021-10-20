@@ -9,6 +9,18 @@
     margin: 0 auto;
 }
 
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+}
+
+// textarea{
+
+// }
+
+
 // Font and Typography things
 html{
     font-size: 125%;
@@ -122,6 +134,25 @@ header {
 .project1TextContainer,
 .project3TextContainer{
     text-align: right;
+    .buttonsContainer{
+        justify-content: flex-end;
+    }
+}
+
+.buttonsContainer{
+    display: flex;
+    gap: 2rem;
+}
+
+.gitHubButton,
+.liveSiteButton{
+    background-color: $buttonColor;
+    padding: 0 0.5rem;
+    color: #fff;
+    height: 1.8rem;
+    p{
+        margin: 0.3rem auto;
+    }
 }
 
 .contactMe{
