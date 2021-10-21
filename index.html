@@ -12,7 +12,9 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- Devicon CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-    
+    <!-- AoS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles/styles.css">
 
 
@@ -41,13 +43,19 @@
             </ul>
         </nav>
         <p></p> -->
-
-        <div class="wrapper">
-            <h1>Hello world! <span>I'm Brian Canuto</span></h1>
-            <p>A Web Developer</p>
-        </div>
-        <div class="downArrow">
-            <i class="fas fa-chevron-circle-down"></i>
+        <div class="wrapper hero">
+            <div class="heroText" data-aos="fade-right">
+                <h1>Brian Canuto</h1>
+                <p data-aos="fade-up" data-aos-duration="3000">A Web Developer</p>
+            </div>
+            <div class="heroImage" data-aos="fade-left" data-aos-duration="2000">
+                <img src="./styles/assets/hero-image.png" alt="Logo for BCCodes, a trapezoid with a halfmoon like image with B C in the center">
+            </div>
+            <div class="downArrow">
+                <a href="#about">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -69,35 +77,34 @@
                 <h2>Skills and Tools</h2>
                 <!-- To Do: Make animations as well as text pop up underneath to show the name of the skill. Put into a 2x5 grid and size appropriately. -->
                 <div class="skillsGrid">
-                    <div class="skill">
+                    <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="devicon-html5-plain colored"></i>
                     </div>
-                    <div class="skill">
+                    <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="devicon-css3-plain colored"></i>
                     </div>
-                    <div class="skill">
+                    <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="devicon-sass-original colored"></i>
                     </div>
-                    <div class="skill">
+                    <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="devicon-javascript-plain colored"></i>
                     </div>
-                    <div class="skill">
+                    <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="devicon-firebase-plain colored"></i>
                     </div>
-                    <div class="skill">
+                    <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="devicon-react-original colored"></i>
                     </div>
-                    <div class="skill">
+                    <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="devicon-github-original"></i>
                     </div>
-                    <div class="skill">
+                    <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="devicon-nodejs-plain colored"></i>
                     </div>
-                    <!-- Font Awesome Icons aren't showing on Live site but on local. Fix Later -->
-                    <div class="skill">
+                    <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="fas fa-universal-access"></i>
                     </div>
-                    <div class="skill">
+                    <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
                 </div>
@@ -107,7 +114,7 @@
         <section class="projects wrapper" id="projects">
             <h2>Projects</h2>
             <div>
-                <div class="project1Container">
+                <div class="project1Container" data-aos="fade-down">
                     <div class="project1ImgContainer">
                         <img src="./styles/assets/fireAndForgot.png" alt="picture of Fire And Forget website">
                     </div>
@@ -126,7 +133,7 @@
                 </div>
             </div>
             <div>
-                <div class="project2Container">
+                <div data-aos="fade-left" class="project2Container">
                     <div class="project2ImgContainer">
                         <img src="./styles/assets/buffysLog.png" alt="picture of Buffy's workout log website">
                     </div>
@@ -145,7 +152,7 @@
                 </div>
             </div>
             <div>
-                <div class="project3Container">
+                <div data-aos="fade-right" class="project3Container">
                     <div class="project3ImgContainer">
                         <img src="./styles/assets/nygmaMachine.png" alt="picture of The Nygma Machine website">
                     </div>
@@ -192,7 +199,7 @@
                             <input type="email" placeholder="E-mail">
                             
                             <label for="" class="sr-only">Message</label>
-                            <textarea name="" id="" placeholder="Message">
+                            <textarea name="" id="">
     
                             </textarea>
                             <input type="submit" name="" id="">
@@ -201,9 +208,11 @@
                 </div>
             </div>
         </section>
-        <footer class="wrapper">
-            <p>Copyright 2021 Brian Canuto</p>
-        </footer>
     </main>
+    <footer class="wrapper">
+        <p>Copyright 2021 Brian Canuto</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/app.js"></script>
 </body>
 </html>

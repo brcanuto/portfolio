@@ -248,6 +248,19 @@ a:active {
   text-decoration: none;
 }
 
+a:visited {
+  color: inherit;
+}
+
+textarea {
+  height: 5rem;
+  resize: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 html {
   font-size: 125%;
 }
@@ -277,22 +290,92 @@ header h1 {
   font: 600 3rem "Montserrat", sans-serif;
   color: #fff;
 }
-header h1 span {
-  display: block;
-}
 header p {
   color: #fff;
   font-weight: 300;
 }
+header .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10rem;
+}
+header .heroText,
+header .heroImage {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .heroText {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .heroImage {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 70%;
+  max-width: 70%;
+  width: 70%;
+  height: 70%;
+}
 header .downArrow {
   position: absolute;
   top: 90%;
+  left: 48%;
   width: auto;
 }
+header .downArrow i {
+  font-size: 3rem;
+  color: #fff;
+  opacity: 90%;
+  -webkit-animation: arrowDown 3s infinite;
+          animation: arrowDown 3s infinite;
+}
 
+@-webkit-keyframes arrowDown {
+  0% {
+    -webkit-transform: translate(0, -15px);
+    transform: translate(0, -15px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 15px);
+    transform: translate(0, 15px);
+    opacity: 0;
+  }
+}
+@keyframes arrowDown {
+  0% {
+    -webkit-transform: translate(0, -15px);
+    transform: translate(0, -15px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 15px);
+    transform: translate(0, 15px);
+    opacity: 0;
+  }
+}
 .about {
   margin: 0 auto;
   max-width: 80rem;
+  padding-bottom: 3rem;
 }
 .about .aboutContainer {
   display: -webkit-box;
@@ -322,6 +405,8 @@ header .downArrow {
 
 .skillsAndTools {
   background-color: #939393;
+  padding-top: 1rem;
+  padding-bottom: 6rem;
 }
 .skillsAndTools h2 {
   padding-top: 1rem;
@@ -342,6 +427,10 @@ header .downArrow {
 .skillsAndTools i {
   font-size: 5rem;
   margin: 1rem 1rem;
+}
+
+.projects {
+  padding-bottom: 3rem;
 }
 
 .project1Container,
@@ -420,7 +509,7 @@ header .downArrow {
 .contactMe {
   background-color: #000;
   color: #fff;
-  border: 1px solid rebeccapurple;
+  padding: 1rem 0 2rem;
 }
 .contactMe span {
   display: block;
@@ -437,6 +526,20 @@ header .downArrow {
 .contactTextContainer,
 .formContainer {
   width: 50%;
+}
+
+.formFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+input {
+  margin-bottom: 0.5rem;
 }
 
 footer {
