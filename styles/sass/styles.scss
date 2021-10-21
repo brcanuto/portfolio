@@ -18,10 +18,11 @@ a:visited,
 a:hover,
 a:active{
     text-decoration: none;
-}
-a:visited{
     color: inherit;
 }
+// a:visited{
+//     color: inherit;
+// }
 textarea{
     height: 5rem;
     resize: none;
@@ -40,10 +41,14 @@ html{
 h2{
     font: 600 2rem 'Montserrat', sans-serif;
     display: inline-block;
-    box-shadow: 0.25rem 0.25rem lighten($buttonColor, 10);
+    box-shadow: 0.25rem 0.25rem lighten($accentColor, 10);
+    padding-right: 0.4rem;
 }
 h3{
     font: 400 2rem 'Montserrat', sans-serif;
+}
+p{
+    font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -80,8 +85,6 @@ header {
         justify-content: center;
         max-height: 70%;
         max-width: 70%;
-        width: 70%;
-        height: 70%;
     }
     .downArrow{
         position: absolute;
@@ -143,16 +146,17 @@ header {
         width: calc(50% - 0.5rem);
         display: inline-block;
         .calendlyButton{
-            background-color: $buttonColor;
+            background-color: $accentColor;
             width: 5rem;
             height: 2rem;
             text-align: center;
-            color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
-        
-        }
+            p{
+                color: #fff;
+            }
+        }     
     }
     .imgContainer{
         max-width: calc(50% - 0.5rem);
@@ -162,7 +166,7 @@ header {
         img{
             height: 30vh;
             width: auto;
-            box-shadow: 0.25rem 0.5rem;
+            box-shadow: 0.5rem 0.5rem $accentColor;
         }
     }
 }
@@ -183,6 +187,12 @@ header {
     .skill{
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p{
+            margin: 0;
+            text-align: center;
+        }
     }
     i {
         font-size: 5rem;
@@ -200,6 +210,9 @@ header {
 .project3Container{
     display: flex;
     gap: 3rem;
+    background-color: darken(#fff, 2);
+    margin-bottom: 2rem;
+    border-radius: 0.25rem;
 }
 
 .project1ImgContainer,
@@ -214,11 +227,27 @@ header {
         max-height: 80%;
     }
 }
+.project1ImgContainer,
+.project3ImgContainer{
+    box-shadow: -1rem 1rem $accentColor;
+    img{   
+        box-shadow: -0.5rem 0.5rem $primaryColor;
+    }
+}
+
+.project2ImgContainer{
+    box-shadow: 1rem 1rem $accentColor;
+    img{
+        box-shadow: 0.5rem 0.5rem $primaryColor;
+    }
+}
+
 .project1TextContainer,
 .project2TextContainer,
 .project3TextContainer{
     width: 50%;
     display: block;
+    padding: 1rem;
 }
 .projectSkills{
     display: flex;
@@ -227,8 +256,8 @@ header {
         display: flex;
         list-style: none;
         li{
-            margin: 0.5rem 0.5rem;
-            font-size: 1rem;
+            margin: 0.5rem 1rem;
+            font-size: 2.5rem;
         }
     }
 }
@@ -249,7 +278,7 @@ header {
 
 .gitHubButton,
 .liveSiteButton{
-    background-color: $buttonColor;
+    background-color: $accentColor;
     padding: 0 0.5rem;
     height: 1.8rem;
     p{
@@ -259,7 +288,7 @@ header {
 }
 
 .contactMe{
-    background-color: #000;
+    background-color: $offBlack;
     color: #fff;
     padding: 1rem 0 2rem;
     h2{
@@ -284,13 +313,47 @@ header {
     display: flex;
     flex-direction: column;
 }
-input{
+input,
+textarea{
+    border-radius: 0.25rem;
     margin-bottom: 0.5rem;
+}
+.socials{
+    ul{
+        display: flex;
+        list-style: none;
+        li{
+            margin: 0 1rem;
+            font-size: 2rem;
+        }
+    }
+    i{color: #fff;}
 }
 
 footer{
     text-align: center;
+    background-color: $offBlack;
     p{
+        color: #fff;
         margin: 0 auto;
     }
 }
+
+@media (max-width: 1020px) {
+    .header{
+        .hero{ 
+            border: 1rem solid red;
+            gap: 0;
+        }
+    }
+}
+
+// @media (max-width: 850px) {
+//     .header{
+//         .hero{
+//             .heroImage{
+
+//             }
+//         }
+//     }
+// }

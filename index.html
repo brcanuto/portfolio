@@ -7,7 +7,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
    <!-- FontAwesome CDN -->
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- Devicon CDN -->
@@ -64,12 +64,16 @@
             <h2>About</h2>
             <div class="aboutContainer">
                 <div class="aboutText">
-                    <p>Hello World! I am a Front-End Web Developer based out of Toronto!
-                    <br>
-                    My career journey started with working multiple jobs. From cleaning washrooms, washing dishes, and delivering meals, to selling cell phone plans, personal training, and tech-support. While it may not be the most traditional path to development, my tenacity and ability to adapt has brought me to the career and industry I have always wanted to be in. 
-                    <br>
-                    Click on my Calendly if you would like to chat more!
+                    <p>
+                        Hello World! I am a Front-End Web Developer based out of Toronto!
                     </p>
+                    <p>
+                        My career journey started with working multiple jobs. From cleaning washrooms, washing dishes, and delivering meals, to selling cell phone plans, personal training, and tech-support. While it may not be the most traditional path to development, my tenacity and ability to adapt has brought me to the career and industry I have always wanted to be in. 
+                    </p>
+                    <p>
+                        Click on my Calendly if you would like to chat more!
+                    </p>
+
                     <div class="calendlyButton">
                         <a href="https://calendly.com/brian-canuto/15min">
                             <p>
@@ -91,33 +95,51 @@
                 <div class="skillsGrid">
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="devicon-html5-plain colored"></i>
+                        <p>HTML5</p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="devicon-css3-plain colored"></i>
+                        <p>CSS3</p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="devicon-sass-original colored"></i>
+                        <p>Sass</p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="devicon-javascript-plain colored"></i>
+                        <p>JavaScript</p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="devicon-firebase-plain colored"></i>
+                        <p>Firebase</p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="devicon-react-original colored"></i>
+                        <p>React</p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="devicon-github-original"></i>
+                        <p>GitHub</p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="devicon-nodejs-plain colored"></i>
+                        <p>Node.js</p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="fas fa-universal-access"></i>
+                        <p>
+                            Accessible
+                            <br>
+                            Design
+                        </p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
                         <i class="fas fa-mobile-alt"></i>
+                        <p>
+                            Responsive
+                            <br>
+                            Design
+                        </p>
                     </div>
                 </div>
             </div>
@@ -132,8 +154,8 @@
                     </div>
                     <div class="project1TextContainer">
                         <h3>Fire & Forget</h3>
-                        <p>Are your workouts lacking?
-                            <br>
+                        <p>Are your workouts lacking?</p>
+                        <p>
                             An exercise suggestion website made using wger.de's API in order to search for an exercise based off the body part you wish to work on as well as the type of equipment you have available. 
                         </p>
                         <div class="projectSkills">
@@ -256,38 +278,44 @@
                 <div class="contactContainer">
                     <div class="contactTextContainer">
                         <p>Thanks for making it to this point! Feel free to reach out to me directly at the email below!<span>brian.r.canuto@gmail.com</span></p>
-                        <div>
-                            <a href="https://github.com/brcanuto">
-                                <i class="devicon-github-original"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/brian-canuto/">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://twitter.com/BCcodes">
-                                <i class="fab fa-twitter"></i>
-                            </a>
+                        <div class="socials">
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/brcanuto">
+                                        <i class="devicon-github-original"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/brian-canuto/">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/BCcodes">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="formContainer">
                         <form action="https://formspree.io/f/mpzkernl" method="POST" class="formFlex">
-                            <label for="" class="sr-only">Name</label>
-                            <input type="text" placeholder="Name">
+                            <label for="name" class="sr-only" >Name</label>
+                            <input type="text" placeholder="Name" id="name">
                             
-                            <label for="" class="sr-only">Email</label>
-                            <input type="email" placeholder="E-mail">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" placeholder="E-mail" id="email">
                             
-                            <label for="" class="sr-only">Message</label>
-                            <textarea name="" id="">
-    
-                            </textarea>
-                            <input type="submit" name="" id="">
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea name="message" id="message"></textarea>
+                            <input type="submit" name="submit" id="submit" value="Submit">
                         </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="wrapper">
+    <footer>
         <p>Copyright 2021 Brian Canuto</p>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

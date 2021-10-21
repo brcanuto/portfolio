@@ -250,9 +250,6 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
-}
-
-a:visited {
   color: inherit;
 }
 
@@ -274,10 +271,15 @@ h2 {
   display: inline-block;
   -webkit-box-shadow: 0.25rem 0.25rem #45d2bf;
           box-shadow: 0.25rem 0.25rem #45d2bf;
+  padding-right: 0.4rem;
 }
 
 h3 {
   font: 400 2rem "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Lato", sans-serif;
 }
 
 header {
@@ -332,8 +334,6 @@ header .heroImage {
           justify-content: center;
   max-height: 70%;
   max-width: 70%;
-  width: 70%;
-  height: 70%;
 }
 header .downArrow {
   position: absolute;
@@ -398,7 +398,6 @@ header .downArrow i {
   width: 5rem;
   height: 2rem;
   text-align: center;
-  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,6 +407,9 @@ header .downArrow i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.about .aboutText .calendlyButton p {
+  color: #fff;
 }
 .about .imgContainer {
   max-width: calc(50% - 0.5rem);
@@ -422,8 +424,8 @@ header .downArrow i {
 .about .imgContainer img {
   height: 30vh;
   width: auto;
-  -webkit-box-shadow: 0.25rem 0.5rem;
-          box-shadow: 0.25rem 0.5rem;
+  -webkit-box-shadow: 0.5rem 0.5rem #2cb8a5;
+          box-shadow: 0.5rem 0.5rem #2cb8a5;
 }
 
 .skillsAndTools {
@@ -448,6 +450,17 @@ header .downArrow i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.skillsAndTools .skill p {
+  margin: 0;
+  text-align: center;
 }
 .skillsAndTools i {
   font-size: 5rem;
@@ -465,6 +478,9 @@ header .downArrow i {
   display: -ms-flexbox;
   display: flex;
   gap: 3rem;
+  background-color: #fafafa;
+  margin-bottom: 2rem;
+  border-radius: 0.25rem;
 }
 
 .project1ImgContainer,
@@ -488,11 +504,32 @@ header .downArrow i {
   max-height: 80%;
 }
 
+.project1ImgContainer,
+.project3ImgContainer {
+  -webkit-box-shadow: -1rem 1rem #2cb8a5;
+          box-shadow: -1rem 1rem #2cb8a5;
+}
+.project1ImgContainer img,
+.project3ImgContainer img {
+  -webkit-box-shadow: -0.5rem 0.5rem #939393;
+          box-shadow: -0.5rem 0.5rem #939393;
+}
+
+.project2ImgContainer {
+  -webkit-box-shadow: 1rem 1rem #2cb8a5;
+          box-shadow: 1rem 1rem #2cb8a5;
+}
+.project2ImgContainer img {
+  -webkit-box-shadow: 0.5rem 0.5rem #939393;
+          box-shadow: 0.5rem 0.5rem #939393;
+}
+
 .project1TextContainer,
 .project2TextContainer,
 .project3TextContainer {
   width: 50%;
   display: block;
+  padding: 1rem;
 }
 
 .projectSkills {
@@ -510,8 +547,8 @@ header .downArrow i {
   list-style: none;
 }
 .projectSkills ul li {
-  margin: 0.5rem 0.5rem;
-  font-size: 1rem;
+  margin: 0.5rem 1rem;
+  font-size: 2.5rem;
 }
 
 .project2ImgContainer {
@@ -547,7 +584,7 @@ header .downArrow i {
 }
 
 .contactMe {
-  background-color: #000;
+  background-color: #1a1a1a;
   color: #fff;
   padding: 1rem 0 2rem;
 }
@@ -582,13 +619,38 @@ header .downArrow i {
           flex-direction: column;
 }
 
-input {
+input,
+textarea {
+  border-radius: 0.25rem;
   margin-bottom: 0.5rem;
+}
+
+.socials ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+.socials ul li {
+  margin: 0 1rem;
+  font-size: 2rem;
+}
+.socials i {
+  color: #fff;
 }
 
 footer {
   text-align: center;
+  background-color: #1a1a1a;
 }
 footer p {
+  color: #fff;
   margin: 0 auto;
+}
+
+@media (max-width: 1020px) {
+  .header .hero {
+    border: 1rem solid red;
+    gap: 0;
+  }
 }
