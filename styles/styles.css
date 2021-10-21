@@ -241,6 +241,10 @@ html {
   margin: 0 auto;
 }
 
+ul {
+  padding: 0;
+}
+
 a:link,
 a:visited,
 a:hover,
@@ -267,6 +271,9 @@ html {
 
 h2 {
   font: 600 2rem "Montserrat", sans-serif;
+  display: inline-block;
+  -webkit-box-shadow: 0.25rem 0.25rem #45d2bf;
+          box-shadow: 0.25rem 0.25rem #45d2bf;
 }
 
 h3 {
@@ -374,7 +381,7 @@ header .downArrow i {
 }
 .about {
   margin: 0 auto;
-  max-width: 80rem;
+  max-width: 80%;
   padding-bottom: 3rem;
 }
 .about .aboutContainer {
@@ -385,6 +392,22 @@ header .downArrow i {
 .about .aboutText {
   width: calc(50% - 0.5rem);
   display: inline-block;
+}
+.about .aboutText .calendlyButton {
+  background-color: #2cb8a5;
+  width: 5rem;
+  height: 2rem;
+  text-align: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .about .imgContainer {
   max-width: calc(50% - 0.5rem);
@@ -411,6 +434,8 @@ header .downArrow i {
 .skillsAndTools h2 {
   padding-top: 1rem;
   color: #fff;
+  -webkit-box-shadow: 0.3rem 0.3rem #333333;
+          box-shadow: 0.3rem 0.3rem #333333;
 }
 .skillsAndTools .skillsGrid {
   display: grid;
@@ -470,16 +495,31 @@ header .downArrow i {
   display: block;
 }
 
+.projectSkills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.projectSkills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+.projectSkills ul li {
+  margin: 0.5rem 0.5rem;
+  font-size: 1rem;
+}
+
 .project2ImgContainer {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
 }
 
-.project1TextContainer,
-.project3TextContainer {
-  text-align: right;
-}
 .project1TextContainer .buttonsContainer,
 .project3TextContainer .buttonsContainer {
   -webkit-box-pack: end;
@@ -498,18 +538,22 @@ header .downArrow i {
 .liveSiteButton {
   background-color: #2cb8a5;
   padding: 0 0.5rem;
-  color: #fff;
   height: 1.8rem;
 }
 .gitHubButton p,
 .liveSiteButton p {
   margin: 0.3rem auto;
+  color: #fff;
 }
 
 .contactMe {
   background-color: #000;
   color: #fff;
   padding: 1rem 0 2rem;
+}
+.contactMe h2 {
+  -webkit-box-shadow: 0.3rem 0.3rem #606060;
+          box-shadow: 0.3rem 0.3rem #606060;
 }
 .contactMe span {
   display: block;
