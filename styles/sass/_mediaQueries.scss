@@ -101,7 +101,8 @@
     header{
         height: 90vh;
         .downArrow{
-            top: 75%;
+            position: unset;
+            order: -1;
         }
     }
     .wrapper{

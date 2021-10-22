@@ -792,7 +792,10 @@ input[type=submit] {
     height: 90vh;
   }
   header .downArrow {
-    top: 75%;
+    position: unset;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 
   .wrapper {
