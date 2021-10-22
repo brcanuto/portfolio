@@ -705,6 +705,9 @@ input[type=submit] {
   header .hero .heroText {
     text-align: center;
   }
+  header .hero img {
+    width: 100%;
+  }
 
   .skillsAndTools i {
     font-size: 3rem;
