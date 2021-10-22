@@ -269,8 +269,8 @@ html {
 h2 {
   font: 600 2rem "Montserrat", sans-serif;
   display: inline-block;
-  -webkit-box-shadow: 0.25rem 0.25rem #45d2bf;
-          box-shadow: 0.25rem 0.25rem #45d2bf;
+  -webkit-box-shadow: 0.25rem 0.25rem #d0f1c9;
+          box-shadow: 0.25rem 0.25rem #d0f1c9;
   padding-right: 0.4rem;
 }
 
@@ -293,7 +293,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #939393;
+  background-color: #9aae93;
 }
 header h1 {
   font: 600 3rem "Montserrat", sans-serif;
@@ -379,6 +379,10 @@ header .downArrow i {
     opacity: 0;
   }
 }
+main {
+  background-color: #FEF5ED;
+}
+
 .about {
   margin: 0 auto;
   max-width: 80%;
@@ -394,7 +398,7 @@ header .downArrow i {
   display: inline-block;
 }
 .about .aboutText .calendlyButton {
-  background-color: #2cb8a5;
+  background-color: #ace6a1;
   width: 5rem;
   height: 2rem;
   text-align: center;
@@ -407,9 +411,10 @@ header .downArrow i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 1.25rem;
 }
 .about .aboutText .calendlyButton p {
-  color: #fff;
+  color: #404040;
 }
 .about .imgContainer {
   max-width: calc(50% - 0.5rem);
@@ -424,12 +429,12 @@ header .downArrow i {
 .about .imgContainer img {
   height: 30vh;
   width: auto;
-  -webkit-box-shadow: 0.5rem 0.5rem #2cb8a5;
-          box-shadow: 0.5rem 0.5rem #2cb8a5;
+  -webkit-box-shadow: 0.5rem 0.5rem #ace6a1;
+          box-shadow: 0.5rem 0.5rem #ace6a1;
 }
 
 .skillsAndTools {
-  background-color: #939393;
+  background-color: #9aae93;
   padding-top: 1rem;
   padding-bottom: 6rem;
 }
@@ -478,9 +483,9 @@ header .downArrow i {
   display: -ms-flexbox;
   display: flex;
   gap: 3rem;
-  background-color: #fafafa;
+  background-color: #e5d3bc;
   margin-bottom: 2rem;
-  border-radius: 0.25rem;
+  border-radius: 1.25rem;
 }
 
 .project1ImgContainer,
@@ -506,22 +511,26 @@ header .downArrow i {
 
 .project1ImgContainer,
 .project3ImgContainer {
-  -webkit-box-shadow: -1rem 1rem #2cb8a5;
-          box-shadow: -1rem 1rem #2cb8a5;
+  -webkit-box-shadow: -1rem 1rem #ace6a1;
+          box-shadow: -1rem 1rem #ace6a1;
+  border-radius: 1.25rem;
 }
 .project1ImgContainer img,
 .project3ImgContainer img {
-  -webkit-box-shadow: -0.5rem 0.5rem #939393;
-          box-shadow: -0.5rem 0.5rem #939393;
+  -webkit-box-shadow: -0.5rem 0.5rem #9aae93;
+          box-shadow: -0.5rem 0.5rem #9aae93;
+  border-radius: 1.25rem;
 }
 
 .project2ImgContainer {
-  -webkit-box-shadow: 1rem 1rem #2cb8a5;
-          box-shadow: 1rem 1rem #2cb8a5;
+  -webkit-box-shadow: 1rem 1rem #ace6a1;
+          box-shadow: 1rem 1rem #ace6a1;
+  border-radius: 1.25rem;
 }
 .project2ImgContainer img {
-  -webkit-box-shadow: 0.5rem 0.5rem #939393;
-          box-shadow: 0.5rem 0.5rem #939393;
+  -webkit-box-shadow: 0.5rem 0.5rem #9aae93;
+          box-shadow: 0.5rem 0.5rem #9aae93;
+  border-radius: 1.25rem;
 }
 
 .project1TextContainer,
@@ -573,14 +582,15 @@ header .downArrow i {
 
 .gitHubButton,
 .liveSiteButton {
-  background-color: #2cb8a5;
+  background-color: #ace6a1;
   padding: 0 0.5rem;
   height: 1.8rem;
+  border-radius: 1.25rem;
 }
 .gitHubButton p,
 .liveSiteButton p {
   margin: 0.3rem auto;
-  color: #fff;
+  color: #404040;
 }
 
 .contactMe {
@@ -589,8 +599,8 @@ header .downArrow i {
   padding: 1rem 0 2rem;
 }
 .contactMe h2 {
-  -webkit-box-shadow: 0.3rem 0.3rem #606060;
-          box-shadow: 0.3rem 0.3rem #606060;
+  -webkit-box-shadow: 0.3rem 0.3rem #667d5e;
+          box-shadow: 0.3rem 0.3rem #667d5e;
 }
 .contactMe span {
   display: block;
@@ -648,9 +658,28 @@ footer p {
   margin: 0 auto;
 }
 
-@media (max-width: 1020px) {
-  .header .hero {
-    border: 1rem solid red;
+@media screen and (max-width: 1020px) {
+  header .hero {
     gap: 0;
+  }
+}
+@media (max-width: 850px) {
+  header .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .hero .heroText {
+    text-align: center;
   }
 }

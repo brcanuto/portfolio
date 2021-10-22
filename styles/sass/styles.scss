@@ -133,12 +133,14 @@ header {
   }
 
 
-
+main{
+    background-color: $defaultBackground;
+}
 .about {
     margin: 0 auto;
-    // max-width: 80rem;
     max-width: 80%;
     padding-bottom: 3rem;
+    
     .aboutContainer{
         display: flex;
     }
@@ -153,8 +155,9 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
+            border-radius: 1.25rem;
             p{
-                color: #fff;
+                color: $buttonBlack;
             }
         }     
     }
@@ -210,9 +213,9 @@ header {
 .project3Container{
     display: flex;
     gap: 3rem;
-    background-color: darken(#fff, 2);
+    background-color: $containerColor;
     margin-bottom: 2rem;
-    border-radius: 0.25rem;
+    border-radius: 1.25rem;
 }
 
 .project1ImgContainer,
@@ -230,15 +233,19 @@ header {
 .project1ImgContainer,
 .project3ImgContainer{
     box-shadow: -1rem 1rem $accentColor;
+    border-radius: 1.25rem;
     img{   
         box-shadow: -0.5rem 0.5rem $primaryColor;
+        border-radius: 1.25rem;
     }
 }
 
 .project2ImgContainer{
     box-shadow: 1rem 1rem $accentColor;
+    border-radius: 1.25rem;
     img{
         box-shadow: 0.5rem 0.5rem $primaryColor;
+        border-radius: 1.25rem;
     }
 }
 
@@ -281,9 +288,10 @@ header {
     background-color: $accentColor;
     padding: 0 0.5rem;
     height: 1.8rem;
+    border-radius: 1.25rem;
     p{
         margin: 0.3rem auto;
-        color: #fff;
+        color: $buttonBlack;
     }
 }
 
@@ -339,21 +347,31 @@ footer{
     }
 }
 
-@media (max-width: 1020px) {
-    .header{
-        .hero{ 
-            border: 1rem solid red;
+@media screen and (max-width: 1020px) {
+    header{
+        .hero{
             gap: 0;
         }
+
     }
 }
 
-// @media (max-width: 850px) {
-//     .header{
-//         .hero{
-//             .heroImage{
-
-//             }
-//         }
-//     }
-// }
+@media (max-width: 850px) {
+    header{
+        .hero{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            .heroText{
+                text-align: center;
+            }
+            // .heroImage{
+            //     position: absolute;
+            //     opacity: 30%;
+            //     z-index: 0;
+            //     top: 25%
+            // }
+        }
+    }
+}
