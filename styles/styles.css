@@ -636,6 +636,11 @@ textarea {
   border: none;
 }
 
+input[type=submit] {
+  background-color: #ace6a1;
+  color: #1a1a1a;
+}
+
 .socials ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -778,6 +783,13 @@ footer p {
   }
 }
 @media (max-width: 429px) {
+  header {
+    height: 90vh;
+  }
+  header .downArrow {
+    top: 75%;
+  }
+
   .wrapper {
     max-width: 90%;
     width: 85%;

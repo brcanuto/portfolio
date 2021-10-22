@@ -327,6 +327,12 @@ textarea{
     margin-bottom: 0.5rem;
     border: none;
 }
+
+input[type=submit]{
+    background-color: $accentColor;
+    color: $offBlack;
+}
+
 .socials{
     ul{
         display: flex;
@@ -450,6 +456,12 @@ footer{
 }
 
 @media (max-width:429px){
+    header{
+        height: 90vh;
+        .downArrow{
+            top: 75%;
+        }
+    }
     .wrapper{
         max-width: 90%;
         width: 85%;
