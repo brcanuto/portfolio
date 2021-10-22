@@ -841,4 +841,29 @@ header .heroImage {
   h4 {
     text-align: center;
   }
+
+  .contactContainer ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 820px) and (orientation: landscape) {
+  header .hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 7rem;
+  }
+  header .hero .heroImage,
+header .hero .heroText {
+    width: 50%;
+  }
+  header .hero .downArrow {
+    top: 80%;
+  }
+  header .hero img {
+    width: 100%;
+  }
 }

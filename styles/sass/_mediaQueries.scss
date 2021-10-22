@@ -141,4 +141,28 @@
     h4{
         text-align: center;
     }
+    .contactContainer{
+        ul{
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width:820px) and (orientation: landscape) {
+    header{
+        .hero{
+            flex-direction: row;
+            gap: 7rem;
+            .heroImage,
+            .heroText{
+                width: 50%;
+            }
+            .downArrow{
+                top: 80%;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
 }
