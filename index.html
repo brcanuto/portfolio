@@ -51,16 +51,16 @@
             <div class="heroImage" data-aos="fade-left" data-aos-duration="2000">
                 <img src="./styles/assets/hero-image.png" alt="Logo for BCCodes, a trapezoid with a halfmoon like image with B C in the center">
             </div>
-            <div class="downArrow">
+            <div class="downArrow" tabindex=“0”>
                 <a href="#about">
-                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-down" title="Pulsing Arrow down to go to the next Section"></i>
                 </a>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="about" id="about">
+        <section class="about" id="about" tabindex=“0”>
             <h2>About</h2>
             <div class="aboutContainer">
                 <div class="aboutText">
@@ -74,7 +74,7 @@
                         Click on my Calendly if you would like to chat more!
                     </p>
 
-                    <div class="calendlyButton">
+                    <div class="calendlyButton" tabindex=“0”>
                         <a href="https://calendly.com/brian-canuto/15min">
                             <p>
                             Calendly
@@ -88,93 +88,86 @@
             </div>
         </section>
     
-        <section class="skillsAndTools" id="skills">
+        <section class="skillsAndTools" id="skills" tabindex=“0”>
             <div class="wrapper">
                 <h2>Skills and Tools</h2>
                 <!-- To Do: Make animations as well as text pop up underneath to show the name of the skill. Put into a 2x5 grid and size appropriately. -->
                 <div class="skillsGrid">
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
-                        <i class="devicon-html5-plain colored"></i>
+                        <i class="devicon-html5-plain colored" title="Icon for HTML5"></i>
                         <p>HTML5</p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
-                        <i class="devicon-css3-plain colored"></i>
+                        <i class="devicon-css3-plain colored" title="Icon for CSS3"></i>
                         <p>CSS3</p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
-                        <i class="devicon-sass-original colored"></i>
+                        <i class="devicon-sass-original colored" title="Icon for Sass"></i>
                         <p>Sass</p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
-                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-javascript-plain colored" title="Icon for JavaScript"></i>
                         <p>JavaScript</p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
-                        <i class="devicon-firebase-plain colored"></i>
+                        <i class="devicon-firebase-plain colored" title="Icon for Firebase"></i>
                         <p>Firebase</p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
-                        <i class="devicon-react-original colored"></i>
+                        <i class="devicon-react-original colored" title="Icon for React"></i>
                         <p>React</p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
-                        <i class="devicon-github-original"></i>
+                        <i class="devicon-github-original" title="Icon for Github"></i>
                         <p>GitHub</p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
-                        <i class="devicon-nodejs-plain colored"></i>
+                        <i class="devicon-nodejs-plain colored" title="Icon for Node.js"></i>
                         <p>Node.js</p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
-                        <i class="fas fa-universal-access"></i>
+                        <i class="fas fa-universal-access" title="Icon for Accessible Design"></i>
                         <p>
-                            Accessible
-                            <br>
-                            Design
+                            Accessible<span>Design</span>
                         </p>
                     </div>
                     <div data-aos="flip-up" data-aos-duration="500" class="skill">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-mobile-alt" title="Icon for Responsive Design"></i>
                         <p>
-                            Responsive
-                            <br>
-                            Design
+                            Responsive<span>Design</span> 
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="projects wrapper" id="projects">
+        <section class="projects wrapper" id="projects" tabindex=“0”>
             <h2>Projects</h2>
             <div>
                 <div class="project1Container" data-aos="fade-down">
                     <div class="project1ImgContainer">
                         <img src="./styles/assets/fireAndForgot.png" alt="picture of Fire And Forget website">
                     </div>
-                    <div class="project1TextContainer">
+                    <div class="project1TextContainer" tabindex=“0”>
                         <h3>Fire & Forget</h3>
                         <p>Are your workouts lacking?</p>
                         <p>
-                            An exercise suggestion website made using wger.de's API in order to search for an exercise based off the body part you wish to work on as well as the type of equipment you have available. 
+                            An exercise suggestion website made using <a href="https://wger.de/en/software/api">wger.de's API</a> in order to search for an exercise based off the body part you wish to work on as well as the type of equipment you have available. 
                         </p>
                         <div class="projectSkills">
                             <ul>
                                 <li>     
-                                    <i class="devicon-html5-plain"></i>
+                                    <i class="devicon-html5-plain" title="Icon for HTML5"></i>
                                 </li>
                                 <li>                                
-                                    <i class="devicon-css3-plain"></i>
+                                    <i class="devicon-css3-plain" title="Icon for CSS3"></i>
                                 </li>
                                 <li>
-                                    <i class="devicon-sass-original"></i>
+                                    <i class="devicon-sass-original" title="Icon for Sass"></i>
                                 </li>
                                 <li>                                
-                                    <i class="devicon-javascript-plain"></i>
+                                    <i class="devicon-javascript-plain" title="Icon for JavaScript"></i>
                                 </li>
-                                <!-- <li>
-    
-                                </li> -->
                             </ul>
                         </div>
                         <div class="buttonsContainer">
@@ -190,34 +183,33 @@
                 </div>
             </div>
             <div>
-                <div data-aos="fade-left" class="project2Container">
+                <div data-aos="fade-left" class="project2Container" tabindex=“0”>
                     <div class="project2ImgContainer">
                         <img src="./styles/assets/buffysLog.png" alt="picture of Buffy's workout log website">
                     </div>
-                    <div class="project2TextContainer">
+                    <div class="project2TextContainer" tabindex=“0”>
                         <h3>Buffy's Workout Log</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, qui. Eos modi beatae sequi voluptatibus, quae odio officia rem, temporibus quisquam mollitia, tempora quia ipsa obcaecati rerum culpa quod neque!
-
-                        </p>
+                        <p>Need a way to track your progress?</p>
+                        <p>Never forget what you did for a workout again! Easily input the date, exercise as well as a description. Built utilizing React and Firebase. </p>
                         <div class="projectSkills">
                             <ul>
                                 <li>                                
-                                    <i class="devicon-html5-plain"></i>
+                                    <i class="devicon-html5-plain" title="Icon for HTML5"></i>
                                 </li>
                                 <li>                                
-                                    <i class="devicon-css3-plain"></i>
+                                    <i class="devicon-css3-plain" title="Icon for CSS3"></i>
                                 </li>
                                 <li>
-                                    <i class="devicon-sass-original"></i>
+                                    <i class="devicon-sass-original" title="Icon for Sass"></i>
                                 </li>
                                 <li>                                
-                                    <i class="devicon-javascript-plain"></i>
+                                    <i class="devicon-javascript-plain" title="Icon for JavaScript"></i>
                                 </li>
                                 <li>
-                                    <i class="devicon-react-original"></i>
+                                    <i class="devicon-react-original" title="Icon for React"></i>
                                 </li>
                                 <li>
-                                    <i class="devicon-firebase-plain"></i>
+                                    <i class="devicon-firebase-plain" title="Icon for Firebase"></i>
                                 </li>
                             </ul>
                         </div>
@@ -234,33 +226,34 @@
             </div>
             <div>
                 <div data-aos="fade-right" class="project3Container">
-                    <div class="project3ImgContainer">
+                    <div class="project3ImgContainer" tabindex=“0”>
                         <img src="./styles/assets/nygmaMachine.png" alt="picture of The Nygma Machine website">
                     </div>
-                    <div class="project3TextContainer">
+                    <div class="project3TextContainer" tabindex=“0”>
                         <h3>The Nygma Machine</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, qui. Eos modi beatae sequi voluptatibus, quae odio officia rem, temporibus quisquam mollitia, tempora quia ipsa obcaecati rerum culpa quod neque!
-
+                        <p>Do you wanna play a game?</p>
+                        <p>
+                            Come forth and ask the Nygma machine any life advice you seek! Based off the character Edward Nygma from the Batman series. The Nygma Machine was a group project utilizing collaborative programming, React, Firebase, and the <a href="https://api.adviceslip.com/">advice Slip API</a>
                         </p>
                         <div class="projectSkills">
                                 <ul>
                                     <li>                                
-                                        <i class="devicon-html5-plain"></i>
+                                        <i class="devicon-html5-plain" title="Icon for HTML5"></i>
                                     </li>
                                     <li>                                
-                                        <i class="devicon-css3-plain"></i>
+                                        <i class="devicon-css3-plain" title="Icon for CSS3"></i>
                                     </li>
                                     <li>
-                                        <i class="devicon-sass-original"></i>
+                                        <i class="devicon-sass-original" title="Icon for Sass"></i>
                                     </li>
                                     <li>                                
-                                        <i class="devicon-javascript-plain"></i>
+                                        <i class="devicon-javascript-plain" title="Icon for JavaScript"></i>
                                     </li>
                                     <li>
-                                        <i class="devicon-react-original"></i>
+                                        <i class="devicon-react-original" title="Icon for React"></i>
                                     </li>
                                     <li>
-                                        <i class="devicon-firebase-plain"></i>
+                                        <i class="devicon-firebase-plain" title="Icon for Firebase"></i>
                                     </li>
                                 </ul>
                         </div>
@@ -278,11 +271,11 @@
             </div>
         </section>
 
-        <section class="contactMe" id="contact">
+        <section class="contactMe" id="contact" tabindex=“0”>
             <div class="wrapper">
                 <h2>Contact</h2>
                 <div class="contactContainer">
-                    <div class="contactTextContainer">
+                    <div class="contactTextContainer" tabindex=“0”>
                         <p>Thanks for making it to this point! Feel free to reach out to me directly at the email below!<span>brian.r.canuto@gmail.com</span></p>
                         <div class="socials">
                             <ul>

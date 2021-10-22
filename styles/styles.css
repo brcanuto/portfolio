@@ -262,6 +262,19 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  background-color: #FEF5ED;
+}
+
+footer {
+  text-align: center;
+  background-color: #1a1a1a;
+}
+footer p {
+  color: #fff;
+  margin: 0 auto;
+}
+
 html {
   font-size: 125%;
 }
@@ -379,10 +392,6 @@ header .downArrow i {
     opacity: 0;
   }
 }
-main {
-  background-color: #FEF5ED;
-}
-
 .about {
   margin: 0 auto;
   max-width: 80%;
@@ -466,6 +475,9 @@ main {
 .skillsAndTools .skill p {
   margin: 0;
   text-align: center;
+}
+.skillsAndTools span {
+  display: block;
 }
 .skillsAndTools i {
   font-size: 5rem;
@@ -653,184 +665,9 @@ input[type=submit] {
 }
 .socials i {
   color: #fff;
+  -webkit-transition: color 2s;
+  transition: color 2s;
 }
 .socials i:hover {
   color: #ace6a1;
-}
-
-footer {
-  text-align: center;
-  background-color: #1a1a1a;
-}
-footer p {
-  color: #fff;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 1030px) {
-  header .hero {
-    gap: 0;
-  }
-
-  .about .imgContainer img {
-    height: 20vh;
-  }
-
-  .projectSkills ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 850px) {
-  header .hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header .hero .heroText {
-    text-align: center;
-  }
-
-  .skillsAndTools i {
-    font-size: 3rem;
-  }
-
-  .project1ImgContainer,
-.project2ImgContainer,
-.project3ImgContainer {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-
-  .project1Container,
-.project3Container {
-    -webkit-box-shadow: 1rem 1rem #ace6a1;
-            box-shadow: 1rem 1rem #ace6a1;
-  }
-
-  .project2Container {
-    -webkit-box-shadow: -1rem 1rem #ace6a1;
-            box-shadow: -1rem 1rem #ace6a1;
-  }
-}
-@media (max-width: 780px) {
-  .about .aboutContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .about .aboutText {
-    width: 100%;
-  }
-
-  .project1Container,
-.project2Container,
-.project3Container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .project1ImgContainer,
-.project1TextContainer,
-.project2ImgContainer,
-.project2TextContainer,
-.project3ImgContainer,
-.project3TextContainer {
-    width: 100%;
-    height: 50%;
-  }
-
-  .project1ImgContainer,
-.project2ImgContainer,
-.project3ImgContainer {
-    margin-top: 2rem;
-  }
-
-  .project2ImgContainer {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-  }
-
-  .project1TextContainer .buttonsContainer,
-.project2TextContainer .buttonsContainer,
-.project3TextContainer .buttonsContainer {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-@media (max-width: 429px) {
-  header {
-    height: 90vh;
-  }
-  header .downArrow {
-    top: 75%;
-  }
-
-  .wrapper {
-    max-width: 90%;
-    width: 85%;
-  }
-
-  header .heroText,
-header .heroImage {
-    width: 100%;
-  }
-  header img {
-    width: 100%;
-  }
-
-  .about .imgContainer {
-    margin-top: 2rem;
-  }
-
-  .skillsAndTools .skillsGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .contactContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 1rem;
-  }
-
-  .contactTextContainer,
-.formContainer {
-    width: 100%;
-  }
-
-  h4 {
-    text-align: center;
-  }
 }

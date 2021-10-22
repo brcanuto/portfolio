@@ -1,0 +1,59 @@
+@import 'variables';
+
+// CONTACT ////////////////////
+
+.contactMe{
+    background-color: $offBlack;
+    color: #fff;
+    padding: 1rem 0 2rem;
+    h2{
+        box-shadow: 0.3rem 0.3rem darken($primaryColor, 20);
+    }
+    span{
+        display: block;
+        font-weight: bold;
+    }
+}
+.contactContainer{
+    display: flex;
+    gap: 3rem;
+}
+
+.contactTextContainer,
+.formContainer{
+    width: 50%;
+}
+
+.formFlex{
+    display: flex;
+    flex-direction: column;
+}
+input,
+textarea{
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+    border: none;
+}
+
+input[type=submit]{
+    background-color: $accentColor;
+    color: $offBlack;
+}
+
+.socials{
+    ul{
+        display: flex;
+        list-style: none;
+        li{
+            margin: 0 1rem;
+            font-size: 2rem;
+        }
+    }
+    i{
+        color: #fff;
+        transition: color 2s;
+    }
+    i:hover{
+        color: $accentColor;
+    }
+}

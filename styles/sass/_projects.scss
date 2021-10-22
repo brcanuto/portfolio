@@ -1,0 +1,93 @@
+@import 'variables';
+
+// Projects //////////////////
+
+.projects{
+    padding-bottom: 3rem;
+}
+.project1Container,
+.project2Container,
+.project3Container{
+    display: flex;
+    gap: 3rem;
+    background-color: $containerColor;
+    margin-bottom: 2rem;
+    border-radius: 1.25rem;
+}
+
+.project1ImgContainer,
+.project2ImgContainer,
+.project3ImgContainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        max-width: 80%;
+        max-height: 80%;
+    }
+}
+.project1ImgContainer,
+.project3ImgContainer{
+    box-shadow: -1rem 1rem $accentColor;
+    border-radius: 1.25rem;
+    img{   
+        box-shadow: -0.5rem 0.5rem $primaryColor;
+        border-radius: 1.25rem;
+    }
+}
+
+.project2ImgContainer{
+    box-shadow: 1rem 1rem $accentColor;
+    border-radius: 1.25rem;
+    img{
+        box-shadow: 0.5rem 0.5rem $primaryColor;
+        border-radius: 1.25rem;
+    }
+}
+
+.project1TextContainer,
+.project2TextContainer,
+.project3TextContainer{
+    width: 50%;
+    display: block;
+    padding: 1rem;
+}
+.projectSkills{
+    display: flex;
+    justify-content: center;
+    ul{
+        display: flex;
+        list-style: none;
+        li{
+            margin: 0.5rem 1rem;
+            font-size: 2.5rem;
+        }
+    }
+}
+.project2ImgContainer{
+    order: 1;
+}
+.project1TextContainer,
+.project3TextContainer{
+    .buttonsContainer{
+        justify-content: flex-end;
+    }
+}
+
+.buttonsContainer{
+    display: flex;
+    gap: 2rem;
+}
+
+.gitHubButton,
+.liveSiteButton{
+    background-color: $accentColor;
+    padding: 0 0.5rem;
+    height: 1.8rem;
+    border-radius: 1.25rem;
+    p{
+        margin: 0.3rem auto;
+        color: $buttonBlack;
+    }
+}

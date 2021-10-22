@@ -1,0 +1,57 @@
+@import 'variables';
+
+// GENERAL ///////////////
+.wrapper{
+    max-width: 80%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+ul{
+    padding: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+    color: inherit;
+}
+textarea{
+    height: 5rem;
+    resize: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+main{
+    background-color: $defaultBackground;
+}
+footer{
+    text-align: center;
+    background-color: $offBlack;
+    p{
+        color: #fff;
+        margin: 0 auto;
+    }
+}
+
+
+// Font and Typography things
+html{
+    font-size: 125%;
+}
+
+h2{
+    font: 600 2rem 'Montserrat', sans-serif;
+    display: inline-block;
+    box-shadow: 0.25rem 0.25rem lighten($accentColor, 10);
+    padding-right: 0.4rem;
+}
+h3{
+    font: 400 2rem 'Montserrat', sans-serif;
+}
+p{
+    font-family: 'Lato', sans-serif;
+}

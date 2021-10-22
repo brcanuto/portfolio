@@ -1,0 +1,35 @@
+@import 'variables';
+
+// SKILLS AND TOOLS SECTION ////////////
+
+.skillsAndTools{
+    background-color: $primaryColor;
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+    h2{
+        padding-top: 1rem;
+        color: #fff;
+        box-shadow: 0.3rem 0.3rem lighten(#000, 20);
+    }
+    .skillsGrid{
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+    }
+    .skill{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p{
+            margin: 0;
+            text-align: center;
+        }
+    }
+    span{
+        display: block;
+    }
+    i {
+        font-size: 5rem;
+        margin: 1rem 1rem;
+    }
+}
