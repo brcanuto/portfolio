@@ -633,6 +633,7 @@ input,
 textarea {
   border-radius: 0.25rem;
   margin-bottom: 0.5rem;
+  border: none;
 }
 
 .socials ul {
@@ -648,6 +649,9 @@ textarea {
 .socials i {
   color: #fff;
 }
+.socials i:hover {
+  color: #ace6a1;
+}
 
 footer {
   text-align: center;
@@ -658,9 +662,18 @@ footer p {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1030px) {
   header .hero {
     gap: 0;
+  }
+
+  .about .imgContainer img {
+    height: 20vh;
+  }
+
+  .projectSkills ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 850px) {
@@ -680,6 +693,132 @@ footer p {
             align-items: center;
   }
   header .hero .heroText {
+    text-align: center;
+  }
+
+  .skillsAndTools i {
+    font-size: 3rem;
+  }
+
+  .project1ImgContainer,
+.project2ImgContainer,
+.project3ImgContainer {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .project1Container,
+.project3Container {
+    -webkit-box-shadow: 1rem 1rem #ace6a1;
+            box-shadow: 1rem 1rem #ace6a1;
+  }
+
+  .project2Container {
+    -webkit-box-shadow: -1rem 1rem #ace6a1;
+            box-shadow: -1rem 1rem #ace6a1;
+  }
+}
+@media (max-width: 780px) {
+  .about .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .aboutText {
+    width: 100%;
+  }
+
+  .project1Container,
+.project2Container,
+.project3Container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .project1ImgContainer,
+.project1TextContainer,
+.project2ImgContainer,
+.project2TextContainer,
+.project3ImgContainer,
+.project3TextContainer {
+    width: 100%;
+    height: 50%;
+  }
+
+  .project1ImgContainer,
+.project2ImgContainer,
+.project3ImgContainer {
+    margin-top: 2rem;
+  }
+
+  .project2ImgContainer {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+
+  .project1TextContainer .buttonsContainer,
+.project2TextContainer .buttonsContainer,
+.project3TextContainer .buttonsContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 429px) {
+  .wrapper {
+    max-width: 90%;
+    width: 85%;
+  }
+
+  header .heroText,
+header .heroImage {
+    width: 100%;
+  }
+  header img {
+    width: 100%;
+  }
+
+  .about .imgContainer {
+    margin-top: 2rem;
+  }
+
+  .skillsAndTools .skillsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+  }
+
+  .contactTextContainer,
+.formContainer {
+    width: 100%;
+  }
+
+  h4 {
     text-align: center;
   }
 }

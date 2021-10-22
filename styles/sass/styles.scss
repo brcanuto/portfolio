@@ -325,6 +325,7 @@ input,
 textarea{
     border-radius: 0.25rem;
     margin-bottom: 0.5rem;
+    border: none;
 }
 .socials{
     ul{
@@ -336,6 +337,9 @@ textarea{
         }
     }
     i{color: #fff;}
+    i:hover{
+        color: $accentColor;
+    }
 }
 
 footer{
@@ -347,12 +351,26 @@ footer{
     }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1030px) {
     header{
         .hero{
             gap: 0;
         }
 
+    }
+    .about{
+        .imgContainer{
+            img{
+                height: 20vh;
+            }
+        }
+    }
+    .projectSkills{
+        ul{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+        }
     }
 }
 
@@ -366,12 +384,106 @@ footer{
             .heroText{
                 text-align: center;
             }
-            // .heroImage{
-            //     position: absolute;
-            //     opacity: 30%;
-            //     z-index: 0;
-            //     top: 25%
-            // }
         }
+    }
+    .skillsAndTools{
+        i{
+            font-size: 3rem;
+        }
+    }
+    .project1ImgContainer,
+    .project2ImgContainer,
+    .project3ImgContainer{
+        box-shadow: none;
+    }
+    .project1Container,
+    .project3Container{
+         box-shadow: 1rem 1rem $accentColor;
+    }
+    .project2Container{
+        box-shadow: -1rem 1rem $accentColor;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .about{
+        .aboutContainer{
+            flex-direction: column;
+            align-items: center;
+        }
+        .aboutText{
+            width: 100%;
+        }
+    }
+    .project1Container,
+    .project2Container,
+    .project3Container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project1ImgContainer,
+    .project1TextContainer,
+    .project2ImgContainer,
+    .project2TextContainer,
+    .project3ImgContainer,
+    .project3TextContainer{
+        width: 100%;
+        height: 50%;
+    }
+    .project1ImgContainer,
+    .project2ImgContainer,
+    .project3ImgContainer{
+        margin-top: 2rem;
+    }
+    .project2ImgContainer{
+        order: 0;
+    }
+    .project1TextContainer,
+    .project2TextContainer,
+    .project3TextContainer{
+        .buttonsContainer{
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width:429px){
+    .wrapper{
+        max-width: 90%;
+        width: 85%;
+    }
+    header{
+        .heroText,
+        .heroImage{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .about{
+        .imgContainer{
+            margin-top: 2rem;
+        }
+    }
+    .skillsAndTools{
+        .skillsGrid{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .contactContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .contactTextContainer,
+    .formContainer{
+        width: 100%;
+    }
+    h4{
+        text-align: center;
     }
 }
